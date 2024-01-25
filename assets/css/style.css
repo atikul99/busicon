@@ -95,7 +95,7 @@ img{
 
 @media (min-width: 1400px){
 	.container{
-		max-width: 1300px;
+		max-width: 1315px;
 	}
 }
 
@@ -241,6 +241,9 @@ img{
 }
 .site-header.style1 .main-menu .manu-wrapper .menu-ul li {
 	margin-right: 10px;
+}
+.site-header.style1 .main-menu .manu-wrapper .menu-ul li:last-child{
+	margin-right: 0;
 }
 .site-header.style1 .main-menu .manu-wrapper .menu-ul li.menu-item-has-children{
 	margin-right: 16px;
@@ -1105,9 +1108,33 @@ img{
 	position: relative;
 	text-align: right;
 }
-.hero-section .slider-item .hero-thumb img {
+.hero-section .slider-item .hero-thumb .main-image{
+	position: relative;
+	display: inline-block;
+}
+.hero-section .slider-item .hero-thumb .main-image::before{
+	content: '';
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background: linear-gradient(0deg, rgba(0, 139, 249, 0.63) 0%, rgba(0, 139, 249, 0.00) 55.19%);
+	bottom: 0;
+	left: 0;
+}
+.hero-section .slider-item .hero-thumb .main-image::after{
+	content: '';
+	position: absolute;
+	height: 97px;
+	width: 41px;
+	background-color: var(--primary-color);
+	bottom: 142px;
+	left: -25px;
+}
+.hero-section .slider-item .hero-thumb .main-image img {
     height: auto;
-    width: 90%;
+    width: auto;
+    border-top-left-radius: 275px;
+	border-top-right-radius: 275px;
 }
 .hero-section .slider-item .hero-thumb .shape1{
 	position: absolute;
@@ -1522,7 +1549,7 @@ img{
 ==================*/
 
 .about {
-    padding: 134px 0 129px;
+    padding: 154px 0 114px;
 }
 .about .section-image{
 	position: relative;
@@ -1530,6 +1557,7 @@ img{
 .about .section-image .image {
     height: 453px;
     width: 416px;
+    border-radius: 10px;
 }
 .about .video-image {
     position: absolute;
@@ -1981,7 +2009,7 @@ img{
 ==================*/
 
 .service {
-    padding: 118px 0 96px;
+    padding: 117px 0 94px;
     background-color: #eff7f8;
     background-image: url(../image/service-bg.png);
     background-repeat: no-repeat;
@@ -2220,7 +2248,7 @@ img{
 ==================*/
 
 .pricing{
-	padding: 120px 0 120px;
+	padding: 117px 0 120px;
 }
 .pricing .section-title{
 	width: 50%;
@@ -2616,8 +2644,6 @@ img{
 	bottom: 30px;
 }
 
-
-
 /*================
  FAQ
 ==================*/
@@ -2675,6 +2701,7 @@ img{
 	text-align: center;
 	border-radius: 50%;
 	background-color: var(--primary-color);
+	flex-shrink: 0;
 }
 .faq .accordion .title i.fa-minus{
 	display: none;
@@ -2696,9 +2723,9 @@ img{
 }
 .faq .image{
 	position: relative;
+	padding: 0 40px 40px 0;
 }
 .faq .image .faq-thumb{
-	padding: 0 40px 40px 0;
 	border-radius: 5px;
 }
 .faq .image .text-box{
@@ -2935,7 +2962,7 @@ img{
 ==================*/
 
 .our-team{
-	padding: 120px 0;
+	padding: 117px 0;
 }
 .our-team .section-title{
 	margin-bottom: 72px;
@@ -3340,8 +3367,6 @@ img{
 	font-weight: bold;
 }
 .portfolio .portfolio-carousel .portfolio-item .content .title a{
-	font-size: 30px;
-	font-weight: bold;
 	color: var(--title-color);
 }
 .portfolio .portfolio-carousel .portfolio-item .content i{
@@ -3360,26 +3385,26 @@ img{
     left: 0;
     cursor: pointer;
     margin: auto;
-    top: 76px;
+    top: 79px;
 }
 .portfolio .owl-dot {
     height: 10px;
     width: 10px;
     background: var(--primary-color);
     display: inline-block;
-    margin: 0 7px;
+    margin: 0 8px;
     border-radius: 100%;
     position: relative;
 }
 .portfolio .owl-dots .owl-dot.active::before {
-    content: '';
-    position: absolute;
-    left: -5px;
-    top: -5px;
-    height: 20px;
-    width: 20px;
-    border-radius: 50%;
-    border: 2px solid var(--primary-color);
+	content: '';
+	position: absolute;
+	left: -7px;
+	top: -7px;
+	height: 24px;
+	width: 24px;
+	border-radius: 50%;
+	border: 2px solid var(--primary-color);
 }
 
 /*style two*/
@@ -3526,7 +3551,7 @@ img{
 }
 .work-process .single-work-process .content h2 {
     font-size: 20px;
-    margin: 19px 0 9px;
+    margin: 20px 0 9px;
 }
 /*btn*/
 .work-process .process-btn {
@@ -3614,7 +3639,7 @@ img{
 ==================*/
 
 .work-process .row.testi {
-    padding-top: 83px;
+    padding-top: 86px;
 }
 .work-process .single-testi {
     text-align: center;
@@ -3635,7 +3660,7 @@ img{
     color: #fff;
 }
 .work-process .content p {
-    margin: 20px 0 16px;
+	margin-bottom: 16px;
 }
 .work-process .icon-list {
     margin-bottom: 21px;
@@ -3655,7 +3680,7 @@ img{
 /* Style One */
 
 .work-process.style1 {
-    padding: 210px 0 57px;
+    padding: 209px 0 57px;
     background-image: url(../image/process1-bg.jpg);
 }
 
@@ -4015,7 +4040,7 @@ img{
 ==================*/
 
 .blog-posts {
-    padding: 119px 0 88px;
+    padding: 116px 0 90px;
 }
 .blog-posts .section-title{
 	margin-bottom: 74px;
@@ -4117,7 +4142,7 @@ img{
     bottom: 0;
     left: 0;
     width: 86%;
-    padding: 21px 21px 11px;
+    padding: 21px 30px 11px;
     border: 3px solid #fff;
     border-bottom: 0;
     background: #FFFFFF;
@@ -4130,14 +4155,24 @@ img{
     position: relative;
 }
 .blog-posts .single-post.style1 .content .author {
-    font-size: 14px;
     color: var(--title-color);
     display: inline-block;
 }
 .blog-posts .single-post.style1 .content .author i {
     font-size: 16px;
     display: inline-block;
-    margin-right: 6px;
+    margin-right: 10px;
+}
+.blog-posts .single-post.style1 .content .author a{
+	color: var(--title-color);
+	font-size: 15px;
+	-webkit-transition: 0.3s;
+	-moz-transition: 0.3s;
+	-o-transition: 0.3s;
+	transition: 0.3s;
+}
+.blog-posts .single-post.style1 .content .author a:hover{
+	color: var(--primary-color);
 }
 .blog-posts .single-post.style1 .content .comment {
     display: inline-block;
@@ -4159,8 +4194,18 @@ img{
 }
 .blog-posts .single-post.style1 .content h3.title a {
 	position: relative;
-    display: inline-block;
-    color: #333F4D;
+	color: #333F4D;
+	display: inline;
+	text-decoration: none;
+	padding-bottom: 2px;
+	background: linear-gradient(to right, currentcolor 0%, currentcolor 98%);
+	background-size: 0px 1px;
+	background-repeat: no-repeat;
+	background-position: left 85%;
+	transition: all 0.5s linear;
+}
+.blog-posts .single-post.style1 .content h3.title a:hover {
+	background-size: 100% 1px;
 }
 
 /*hover*/
@@ -4258,7 +4303,7 @@ img{
 .blog-posts.style-two .single-post.style1 .content .title:before {
     position: absolute;
     content: "";
-    top: 138px;
+    top: 139px;
     left: 30px;
     background: #213438;
     height: 1px;
@@ -5299,7 +5344,7 @@ img{
 ==================*/
 
 .contact-us.one {
-    padding: 112px 0 84px;
+    padding: 120px 0 83px;
     background-image: url(../image/message.png);
     background-repeat: no-repeat;
     background-position: center center;
@@ -5360,7 +5405,7 @@ img{
 
 .contact-us .section-title .title {
     color: #fff;
-    margin-bottom: 56px;
+    margin-bottom: 57px;
 }
 .contact-us .row.contact {
     margin-top: 82px;
@@ -5379,7 +5424,23 @@ img{
     margin-top: 11px;
 }
 .contact-us .contact-image {
-    padding-left: 35px;
+	position: relative;
+    margin-left: 35px;
+}
+.contact-us .contact-image::before{
+	content: '';
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	border: 5px solid var(--primary-color);
+	border-top-left-radius: 300px;
+	border-top-right-radius: 300px;
+	left: 30px;
+	bottom: 20px;
+}
+.contact-us .contact-image img{
+	border-top-left-radius: 300px;
+	border-top-right-radius: 300px;
 }
 .contact-us .contact-info{
 	padding: 57px 60px 5px;

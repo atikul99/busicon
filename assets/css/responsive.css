@@ -390,7 +390,7 @@
 @media(max-width: 991px){
 
 	/*================
-	 Hero Slider
+	 Hero Section
 	==================*/
 
 	.hero-section .slider-item .content .column .subtitle{
@@ -406,6 +406,15 @@
 	.hero-section .slider-item .content .column .description{
 		font-size: 18px;
 	}
+	.hero-section .slider-item .hero-thumb .main-image img{
+		width: 100%;
+	}
+	.hero-section .slider-item .hero-thumb .main-image::after{
+		bottom: 42px;
+	}
+
+	/* Style Two */
+
 	.hero-section.style-two h1.title {
     	font-size: 68px;
 	}
@@ -669,7 +678,7 @@
 	}
 
 	/*================
-	 Hero Slider
+	 Hero Section
 	==================*/
 
 	.hero-section .slider-item {
@@ -713,6 +722,13 @@
 	}
 	.hero-section .slider-item .hero-thumb .shape2 {
 		right: 0;
+	}
+	.hero-section .slider-item .hero-thumb .main-image img{
+		width: 100%;
+	}
+	.hero-section .slider-item .hero-thumb .main-image::after{
+		left: 0;
+		bottom: 20px;
 	}
 
 	/*================
@@ -778,7 +794,7 @@
 	}
 	.about .section-image .image {
 		height: 301px;
-		width: 305px;
+		width: 100%;
 	}
 	.about .section-image .image-text {
 		height: 150px;
@@ -915,6 +931,7 @@
 	.project-section h1.text-white {
 		font-size: 30px;
 	}
+
 	/*================
 	 Pricing Plan
 	==================*/
@@ -922,12 +939,16 @@
 	.pricing {
 		padding: 79px 0 62px;
 	}
+	.pricing .pricing-table .head .currency{
+		font-size: 32px;
+	}
 	.pricing.style-two {
 		padding: 78px 0 0;
 	}
 	.pricing.style-three {
 		padding: 29px 0 80px;
 	}
+
 	/*================
 	 Work Process
 	==================*/
@@ -941,7 +962,11 @@
 	.work-process.style-two {
 		padding: 72px 0 42px;
 	}
-	/*	faq*/
+
+	/*================
+	 FAQ
+	==================*/
+
 	.faq {
 		padding: 79px 0 82px;
 	}
@@ -970,6 +995,7 @@
 	.faq.style-four .section-title .description {
 	    width: 100%;
 	}
+
 	/*counter*/
 	.counter-section.style-three {
    		padding: 76px 0 450px;
@@ -1023,6 +1049,18 @@
 	.call-content .title {
 		font-size: 35px;
 	}
+
+	/*================
+	 Home Contact
+	==================*/
+
+	.contact-us .contact-image{
+		margin-left: 0;
+	}
+	.contact-us .contact-image::before{
+		left: 0;
+	}
+
 	/*================
 	 Blog Posts
 	==================*/

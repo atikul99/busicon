@@ -153,11 +153,11 @@ $(document).ready(function(o){
 		autoplay: false,
 		autoplayTimeout: 8000,
 		margin: 30,
-		center: true,
+		center: false,
+		stagePadding: 306.5,
 		dots: false,
 		dotsEach: true,
 		lazyLoad:true,
-		autoplayHoverPause:true,
 		smartSpeed: 1000,
 		nav:true,
 		navText: ["<i class='far fa-arrow-left'></i>", "<i class='far fa-arrow-right'></i>"],
@@ -165,21 +165,25 @@ $(document).ready(function(o){
 			0: {
 				items: 1,
 				nav: false,
+				stagePadding: 0,
 			},
 			768: {
 				nav: false,
 				items: 2,
+				stagePadding: 0,
 			},
 			992: {
 				nav: false,
 				items: 2,
+				stagePadding: 0,
 			},
 			1200: {
 				items: 3,
 				nav: false,
+				stagePadding: 0,
 			},
 			1920: {
-				items: 4,
+				items: 3,
 				nav:false,
 			}
 		}
@@ -195,6 +199,7 @@ $(document).ready(function(o){
 		autoplay: false,
 		autoplayTimeout: 8000,
 		dots: false,
+		margin: 30,
 		dotsEach: true,
 		lazyLoad:true,
 		autoplayHoverPause:true,
@@ -265,8 +270,40 @@ $(document).ready(function(o){
 		}
 	});
 	/*================
-	 Testimonial 2
+	 Testimonial
 	==================*/
+
+	$('.testimonial-1-carousel').owlCarousel({
+		loop: true,
+		autoplay: false,
+		autoplayTimeout: 8000,
+		margin: 30,
+		dots: false,
+		dotsEach: true,
+		lazyLoad:true,
+		autoplayHoverPause:true,
+		smartSpeed: 1000,
+		nav:false,
+		navText: ["<i class='far fa-arrow-left'></i>", "<i class='far fa-arrow-right'></i>"],
+		responsive: {
+			0: {
+				items: 1,
+				nav: false,
+			},
+			768: {
+				items: 2,
+				nav: false,
+			},
+			992: {
+				items: 2,
+				nav: false,
+			},
+			1920: {
+				items: 3,
+				nav:false,
+			}
+		}
+	});
 
 	$('.testimonial-carousel').owlCarousel({
 		loop: true,

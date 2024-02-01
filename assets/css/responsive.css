@@ -547,6 +547,7 @@
 	.service.style-two p.description {
 		margin-bottom: 40px;
 	}
+
 	/*================
 	 Choose Us
 	==================*/
@@ -678,13 +679,21 @@
 	.blog-details {
 	    padding: 80px 0 81px;
 	}
+
 	/*================
-	 Blog List
+	 Sidebar
 	==================*/
 
 	.sidebar {
 		margin-left: 0;
-		margin-top: 58px;
+	}
+
+	/*================
+	 Blog Details
+	==================*/
+
+	.blog-details .title-one{
+		font-size: 36px;
 	}
 
 	/*================
@@ -1101,12 +1110,14 @@
 
 	/* Style Two */
 
-	.pricing.style-two {
+	.pricing-2 {
 		padding: 78px 0 0;
 	}
-	.pricing.style-two .section-title {
+	.pricing-2 .section-title {
 		margin-bottom: 32px;
 	}
+
+	/* Style Three */
 
 	.pricing.style-three {
 		padding: 29px 0 80px;
@@ -1297,11 +1308,10 @@
 	.contact-us.one .form-area {
 	    padding: 0 0 60px;
 	}
-
-	.contact-us .contact-image{
+	.contact-us.one .contact-image{
 		margin-left: 0;
 	}
-	.contact-us .contact-image::before{
+	.contact-us.one .contact-image::before{
 		left: 0;
 	}
 
@@ -1384,12 +1394,21 @@
 	 Breadcrumb
 	==================*/
 
+	.breadcrumb-area{
+		padding: 176px 0 112px;
+	}
 	.breadcrumb-area .breadcrumb-inner .page-title {
-	    font-size: 39px;
-	    margin-bottom: 25px;
+	    font-size: 36px;
+	    margin-bottom: 15px;
 	}
 	.breadcrumb-area ul.breadcrumb-nav {
 	    float: inherit;
+	}
+	.breadcrumb-area .breadcrumb-nav li a{
+		font-size: 16px;
+	}
+	.breadcrumb-area .breadcrumb-nav li:last-child{
+		font-size: 16px;
 	}
 
 	/*================
@@ -1493,11 +1512,34 @@
 	}
 
 	/*================
+	 Blog Classic
+	==================*/
+
+	.blog-classic {
+		padding: 80px 0 80px;
+	}
+	.blog-classic .classic-content .title {
+		font-size: 24px;
+		line-height: 1.2;
+		width: 100%;
+	}
+
+	/*================
 	 Blog Details
 	==================*/
 
+	.blog-details {
+		padding: 75px 0 81px;
+	}
+	.blog-details .title-one {
+		font-size: 27px;
+		padding: 0;
+	}
+	.blog-details .title-one:before {
+		display: none;
+	}
 	.blog-details .blog-item .content .title{
-		font-size: 24px;
+		font-size: 18px;
 	}
 	.blog-details .blog-item .content .post-meta .meta-content span {
 		margin-right: 10px;
@@ -1506,23 +1548,13 @@
 		padding: 0;
 	}
 	.blog-details .blog-item .content blockquote {
-	    padding: 39px 20px 20px;
+	    padding: 20px 20px 20px;
 	}
-
-	.blog-details .blog-item .title-one {
-	    font-size: 27px;
-	    padding: 0;
-	}
-	.blog-details .blog-item .title-one:before {
-	    display: none;
-	}
-
-
 	.blog-details .blog-item .content blockquote::after {
 		display: none;
 	}
 	.blog-details .blog-item .content blockquote p {
-		font-size: 18px;
+		margin-bottom: 0;
 	}
 	.blog-details .post-footer{
 		display: block;
@@ -1607,6 +1639,19 @@
 	.contact-us.style-two {
 		padding: 81px 0 80px;
 	}
+
+	/* Inner Page */
+
+	.contact-us.inner{
+		padding: 75px 0 50px;
+	}
+	.contact-us.inner .contact-title .title{
+		font-size: 26px;
+	}
+	.contact-us.inner .row.contact {
+		margin-top: 35px;
+	}
+
 	/*================
 	 404 Page
 	==================*/
@@ -1647,7 +1692,19 @@
 	.why-choose{
 		padding: 0;
 	}
-	/*project */
+	
+	/*================
+	 Project
+	==================*/
+
+	.project {
+		padding: 80px 0 55px;
+	}
+
+	/*================
+	 Project Details
+	==================*/
+
 	.project-details {
 	    padding: 72px 0 80px;
 	}

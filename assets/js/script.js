@@ -72,12 +72,23 @@ $(document).ready(function(o){
 	    });
 	}
 
-  // counterUp
+  /*================
+	 Counter
+	==================*/
 
   $('.counter').counterUp({
     delay: 10,
     time: 1000
   });
+
+	/*================
+	 Pricing Plan
+	==================*/
+
+	$('.pricing-table').hover(function(){
+		$('.pricing-table').removeClass("active");
+		$(this).toggleClass('active');
+	});
 
 	/*================
 	 Brand Section
@@ -150,16 +161,15 @@ $(document).ready(function(o){
 	$('.portfolio-carousel-two').owlCarousel({
 		items: 2,
 		loop: true,
-		autoplay: false,
-		autoplayTimeout: 8000,
+		autoplay: true,
 		margin: 30,
 		center: false,
 		stagePadding: 306.5,
 		dots: false,
 		dotsEach: true,
-		lazyLoad:true,
+		lazyLoad: true,
 		smartSpeed: 1000,
-		nav:true,
+		nav: true,
 		navText: ["<i class='far fa-arrow-left'></i>", "<i class='far fa-arrow-right'></i>"],
 		responsive: {
 			0: {
@@ -275,15 +285,14 @@ $(document).ready(function(o){
 
 	$('.testimonial-1-carousel').owlCarousel({
 		loop: true,
-		autoplay: false,
-		autoplayTimeout: 8000,
+		autoplay: true,
 		margin: 30,
 		dots: false,
 		dotsEach: true,
 		lazyLoad:true,
 		autoplayHoverPause:true,
 		smartSpeed: 1000,
-		nav:false,
+		nav: false,
 		navText: ["<i class='far fa-arrow-left'></i>", "<i class='far fa-arrow-right'></i>"],
 		responsive: {
 			0: {
@@ -399,6 +408,12 @@ $(document).ready(function(o){
 			$('body').removeClass('search-active');
 		});
 	}
+
+	/*================
+	 WOW JS
+	==================*/
+
+	new WOW().init();
 
 	/*================
 	 Sidebar

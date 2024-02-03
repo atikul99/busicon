@@ -667,9 +667,29 @@
 		padding-left: 0;
 		padding-top: 43px;
 	}
+
+	/*================
+	 Service Details
+	==================*/
+
+	.service-details-1 .service-left-content {
+		margin-right: 0;
+	}
+	.service-details-1 .offer-box .details_content {
+		top: 50%;
+		transform: translateY(-50%);
+	}
+	.service-details-1 .benefits .benefits-content {
+		margin-left: 0;
+	}
+	.service-details-1 .service-image {
+		margin: 40px 0 40px;
+	}
+
 	/*================
 	 Blog Section
 	==================*/
+
 	.blog-posts.style-three {
 		padding: 119px 0 91px;
 	}
@@ -694,6 +714,17 @@
 
 	.blog-details .title-one{
 		font-size: 36px;
+	}
+
+	/*================
+	 Project Details
+	==================*/
+
+	.project-details-1 .project-content .project-info {
+		margin: 0 0 35px;
+	}
+	.project-details-1 .project-content .project-solutions .solution-content {
+		margin-left: 0;
 	}
 
 	/*================
@@ -731,10 +762,7 @@
 	.service-right-content .title {
 	    margin-top: 28px;
 	}
-	.offer-box .details_content {
-	    top: 138px;
-	    padding: 0 81px;
-	}
+	
 	/*contact*/
 	.contact-us .info-box.two {
 	    margin-top: 0;
@@ -1468,6 +1496,33 @@
 	.service-page {
 		padding: 80px 0 55px;
 	}
+
+	/*================
+	 Service Details
+	==================*/
+
+	.service-details-1 {
+		padding: 76px 0 55px;
+	}
+	.service-details-1 .service-left-content{
+		margin-right: 0;
+	}
+	.service-details-1 .offer-box .details_content {
+		top: 50%;
+		transform: translateY(-50%);
+	}
+	.service-details-1 .offer-box .details_content .title{
+		font-size: 36px;
+	}
+	.service-details-1 .offer-box .details_content .description {
+		margin-bottom: 0;
+	}
+	.service-details-1 .service-image {
+		margin: 40px 0 40px;
+	}
+	.service-details-1 .benefits .benefits-content {
+		margin: 35px 0 0;
+	}
 	
 	.pricing.service {
 		padding: 79px 0 80px;
@@ -1704,6 +1759,20 @@
 	/*================
 	 Project Details
 	==================*/
+
+	.project-details-1 {
+		padding: 80px 0 56px;
+	}
+	.project-details-1 .project-images {
+		display: block;
+	}
+	.project-details-1 .project-images .item{
+		margin-bottom: 15px;
+	}
+	.project-details-1 .project-content .project-solutions .solution-content{
+		margin: 35px 0 0;
+	}
+
 
 	.project-details {
 	    padding: 72px 0 80px;

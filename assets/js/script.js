@@ -456,3 +456,11 @@ $(document).ready(function(o){
 	});
 
 });
+
+	/*================
+	 Preloader
+	==================*/
+
+	window.onload = function(){
+		$("#preloader").hide();
+	}

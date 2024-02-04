@@ -570,6 +570,18 @@
 	.why-choose .choose-thunb {
    		 margin-bottom: 30px;
 	}
+
+	/*================
+	 FAQ
+	==================*/
+
+	.faq .section-title {
+		margin: 0 0 56px;
+	}
+	.faq .accordion .faq-item{
+		margin-right: 0;
+	}
+
 	/*project*/
 	.project-section .section-title.center {
     	width: 80%;
@@ -705,7 +717,7 @@
 	==================*/
 
 	.sidebar {
-		margin-left: 0;
+		margin: 50px 0 0;
 	}
 
 	/*================
@@ -1653,14 +1665,6 @@
 	}
 	.blog-details .comment-area .comment-form .form-title {
 		font-size: 26px;
-	}
-
-	/*================
-	 Sidebar
-	==================*/
-
-	.sidebar .widget .content .categories li {
-	    padding: 15px 20px;
 	}
 
 	/*================

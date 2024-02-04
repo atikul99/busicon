@@ -786,11 +786,8 @@
 	 Hero Section
 	==================*/
 
-	.hero-section .slider-item {
-		min-height: 1070px;
-	}
 	.hero-section .text-wrapper{
-		margin: 90px 0 20px;
+		margin: 22px 0 20px;
 	}
 	.hero-section .slider-item h1.title {
 	    font-size: 36px;

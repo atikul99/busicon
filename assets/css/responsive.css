@@ -817,6 +817,9 @@
 	.hero-section .slider-item .hero-thumb .shape2 {
 		right: 0;
 	}
+	.hero-section .slider-item .hero-thumb .main-image{
+		width: 70%;
+	}
 	.hero-section .slider-item .hero-thumb .main-image img{
 		width: 100%;
 	}
@@ -1824,10 +1827,14 @@
 
 @media(max-width: 420px){
 
-	/*hero*/
+	/*================
+	 Hero Section
+	==================*/
+
 	.hero-section .slider-item .hero-icon-box {
 		display: none;
 	}
+
 	.hero-section.style-two .hero-icon-box {
 		display: none;
 	}

@@ -3507,7 +3507,7 @@ img{
     width: 80%;
     bottom: -190px;
     background-color: #fff;
-    padding: 30px 80px 30px 40px;
+    padding: 30px 40px 35px 40px;
     left: 50%;
     transform: translateX(-50%);
     -webkit-transition: 0.6s;
@@ -3515,6 +3515,9 @@ img{
     -o-transition: 0.6s;
     transition: 0.6s;
     border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 .portfolio .portfolio-carousel .portfolio-item:hover .content{
 	bottom: 60px;
@@ -3530,13 +3533,31 @@ img{
 }
 .portfolio .portfolio-carousel .portfolio-item .content .title a{
 	color: var(--title-color);
+	-webkit-transition: 0.5s;
+	-moz-transition: 0.5s;
+	-o-transition: 0.5s;
+	transition: 0.5s;
 }
-.portfolio .portfolio-carousel .portfolio-item .content i{
-	position: absolute;
-	color: var(--title-color);
-	font-size: 22px;
-	right: 40px;
-	top: 40px;
+.portfolio .portfolio-carousel .portfolio-item .content .title a:hover{
+	color: var(--primary-color);
+}
+.portfolio .portfolio-carousel .portfolio-item .content .button {
+	display: inline-block;
+	color: #fff;
+	font-size: 20px;
+	background-color: var(--paragraph-color);
+	height: 45px;
+	width: 45px;
+	line-height: 46px;
+	text-align: center;
+	border-radius: 5px;
+	-webkit-transition: 0.5s;
+	-moz-transition: 0.5s;
+	-o-transition: 0.5s;
+	transition: 0.5s;
+}
+.portfolio .portfolio-carousel .portfolio-item .content .button:hover{
+	background-color: var(--primary-color);
 }
 
 /*owl dots*/

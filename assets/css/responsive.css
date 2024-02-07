@@ -8,13 +8,7 @@
 	.service .service-box {
 		padding: 37px  31px 29px;
 	}
-	/*choose*/
-	.why-choose {
-		padding: 0 0 0 115px;
-	}
-	.why-choose .row.choose {
-		padding: 0px 87px 0px 0px;
-	}
+
 	/*call*/
 	.call-section .shape {
 		top: -263px;
@@ -52,6 +46,14 @@
 	}
 
 	/*================
+	 Section Title
+	==================*/
+
+	.section-title.center {
+		width: 47%;
+	}
+
+	/*================
 	 About
 	==================*/
 
@@ -61,14 +63,6 @@
 	/*service*/
 	.service .service-box {
 		padding: 37px  31px 29px;
-	}
-	/*choose*/
-
-	.why-choose {
-		padding: 0;
-	}
-	.why-choose .row.choose {
-		padding: 0px 70px 0px 0px;
 	}
 
 	/*================
@@ -82,9 +76,7 @@
 	.contact-us.style-two .section-title .title {
 		font-size: 41px;
 	}
-	.section-title.center {
-		width: 100%;
-	}
+
 	/*priching*/
 	.pricing.style-three .shape-img {
 		top: 91px;
@@ -305,22 +297,17 @@
 	.service .service-box .service-icon {
 		right: -11px;
 	}
-	/*why choose*/
-	.why-choose {
-		padding: 0;
+
+	/*================
+	 Choose Us
+	==================*/
+
+	.choose-us-2 .text-wrapper {
+		margin-top: 37px;
+		padding-left: 0;
 	}
-	.why-choose .row.choose {
-		padding: 0px 5px 0px 0px;
-	}
-	.why-choose .section-title.style-two .title,
-	.section-title.style-two .title-two {
-		margin-bottom: 0;
-	}
-	.why-choose .choose-content .title {
-		font-size: 17px;
-	}
-	.why-choose .row.rcb {
-		margin-top: 28px;
+	.choose-us-2 .choose-thunb img{
+		width: auto;
 	}
 
 	/*================
@@ -592,16 +579,6 @@
 	}
 	.choose-us .accordion {
 		padding: 0 0 120px;
-	}
-
-	.why-choose{
-		padding: 0;
-	}
-	.why-choose .row.choose {
-		padding: 0 12px 0;
-	}
-	.why-choose .choose-thunb {
-   		margin-bottom: 30px;
 	}
 
 	/*================
@@ -923,6 +900,17 @@
 	    margin-top: 36px;
 	}
 
+	/*================
+	 Footer
+	==================*/
+
+	.site-footer .footer-content {
+		padding: 79px 0 40px;
+	}
+	.site-footer .footer-widget {
+		margin-bottom: 35px;
+	}
+
 	/*copy right*/
 	.copy-right .copyright-list ul li {
 		margin-right: 8px;
@@ -1189,6 +1177,7 @@
 	.service.style-four {
 	    padding: 84px 0 60px;
 	}
+
 	/*================
 	 Choose Us
 	==================*/
@@ -1221,10 +1210,19 @@
 	.choose-us .accordion .title.active .meta--icon::after {
 		right: 23px;
 	}
-	/*why choose*/
-	.why-choose .choose-box {
+	
+	/* Style Two */
+
+	.choose-us-2 .choose-thunb img {
+		width: 100%;
+	}
+	.choose-us-2 .overlay::before {
+		display: none;
+	}
+	.choose-us-2 .choose-box{
 		margin-bottom: 30px;
 	}
+
 	/*project section*/
 	.project-section {
 		padding: 283px 0 254px;
@@ -1299,7 +1297,7 @@
 	/* Style Two */
 
 	.pricing-2 {
-		padding: 78px 0 0;
+		padding: 46px 0 0;
 	}
 	.pricing-2 .section-title {
 		margin-bottom: 32px;
@@ -1895,10 +1893,6 @@
 	.copyright-list ul {
 		padding: 0;
 	}
-
-	.why-choose{
-		padding: 0;
-	}
 	
 	/*================
 	 Project
@@ -2028,13 +2022,7 @@
 	.service .service-box p.description {
 	    width: 100%;
 	}
-	/*choose*/
-	.why-choose .choose-thunb {
-	    left: 0;
-	}
-	.why-choose .choose-thunb img {
-	    width: 100%;
-	}
+	
 	/*faq*/
 	.faq .accordion .faq-item {
 	    margin-right: 0;

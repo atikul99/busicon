@@ -392,7 +392,7 @@ img{
 	margin-right: 0;
 }
 .site-header.style2 .header-bar-btn {
-    margin-left: 60px;
+    margin-left: 30px;
 }
 .site-header.style2 .header-bar-btn a {
     display: inline-block;
@@ -652,7 +652,7 @@ img{
 }
 .site-header .transparent-menu .menu-element .search .search-icon i{
 	color: #fff;
-	font-size: 20px;
+	font-size: 16px;
 	height: 50px;
 	width: 50px;
 	line-height: 50px;
@@ -1369,7 +1369,8 @@ img{
 	background-color: var(--title-color);
 	padding: 18px 23px;
 }
-/*hero-section style-two*/
+
+/* Style Two */
 
 .hero-section.style-two {
 	position: relative;
@@ -1390,7 +1391,7 @@ img{
 }
 .hero-section.style-two .wrapper{
 	position: relative;
-	width: 60%;
+	width: 70%;
 	margin-top: 30px;
 }
 .hero-section.style-two h4.subtitle {
@@ -2189,6 +2190,9 @@ img{
 .service-2 .section-title {
     margin-bottom: 60px;
 }
+.service-2 .section-title .subtitle{
+	color: #213438;
+}
 .service-2 .section-title-description{
 	color: #757575;
 }
@@ -2438,10 +2442,13 @@ img{
 /* Style Two */
 
 .pricing-2{
-	padding: 120px 0 0;
+	padding: 117px 0 0;
 }
 .pricing-2 .section-title {
     margin-bottom: 71px;
+}
+.pricing-2 .section-title .subtitle{
+	color: #213438;
 }
 .pricing.style-two .pricing-table {
     background-color: #f8f8f8;
@@ -2628,54 +2635,62 @@ img{
 }
 
 /*================
- Why Choose
+ Choose Us
 ==================*/
 
-.why-choose {
-    padding: 0 0 0 317px;
-    position: relative;
+.choose-us-2{
+	margin-top: -185px;
+	overflow: hidden;
 }
-.why-choose .row.choose {
-    background-color: #fff;
-    padding: 0px 235px 0px 0px;
-    position: relative;
-    margin-top: -185px;
+.choose-us-2 .overlay{
+	position: relative;
 }
-.why-choose .row.rcb {
-    margin-top: 38px;
+.choose-us-2 .overlay::before{
+	content: '';
+	position: absolute;
+	background: #fff;
+	height: 100%;
+	width: 100vw;
+	top: 0;
+	left: 0;
 }
-.choose-box {
-    transition: .5s;
+.choose-us-2 .section-title{
+	margin-bottom: 45px;
 }
-.why-choose .choose-thunb {
-    position: relative;
-    left: -12px;
+.choose-us-2 .section-title .subtitle{
+	color: #213438;
 }
-.why-choose .choose-thunb img {
-    width: auto;
+.choose-us-2 .section-title .description {
+    margin: 0 0 20px;
 }
-.why-choose .choose-img {
-    display: inline-block;
-    float: left;
-    margin-right: 19px;
+.choose-us-2 .choose-thunb{
+	position: relative;
 }
-.why-choose .choose-img span{
+.choose-us-2 .text-wrapper {
+	position: relative;
+	padding-left: 33px;
+}
+.choose-us-2 .choose-box{
+	display: flex;
+	margin-bottom: 12px;
+}
+.choose-us-2 .choose-img{
+	margin-right: 20px;
+}
+.choose-us-2 .choose-img span {
 	font-size: 41px;
 }
-.choose-content {
-    overflow: hidden;
-}
-.why-choose .choose-content .title {
+.choose-us-2 .choose-content .title {
     color: var(--title-two-color);
     font-size: 20px;
     font-weight: 700;
     margin-bottom: 9px;
 }
-.why-choose .choose-btn {
+.choose-us-2 .choose-btn {
     display: inline-block;
     margin-top: 4px;
 }
-.why-choose .choose-btn a {
+.choose-us-2 .choose-btn a {
     display: inline-block;
     background: var(--secondary-color);
     color: #fff;
@@ -2685,7 +2700,7 @@ img{
     border-radius: 5px;
     transition: 0.5s;
 }
-.choose-box .choose-btn a:hover{
+.choose-us-2 .choose-box .choose-btn a:hover{
     background: var(--title-color);
 }
 
@@ -3198,12 +3213,17 @@ img{
 .our-team .team-member:hover .content .designation{
 	color: #fff;
 }
-/*style two*/
+
+/* Style Two */
+
 .our-team.style-two {
     padding: 120px 0 0;
 }
 .our-team.style-two .section-title {
     margin-bottom: 60px;
+}
+.our-team.style-two .section-title .subtitle{
+	color: #213438;
 }
 .our-team.style-two .single-team-member .image {
     position: relative;
@@ -3887,6 +3907,9 @@ img{
 .work-process.style-two {
     padding: 79px 0 79px;
 }
+.work-process.style-two .section-title .subtitle{
+	color: #213438;
+}
 .work-process.style-two .single-work-process {
     background: transparent;
     box-shadow: none;
@@ -4010,6 +4033,9 @@ img{
 }
 .testimonial-2 .section-title.center {
     margin-bottom: 40px;
+}
+.testimonial-2 .section-title .subtitle{
+	color: #213438;
 }
 .testimonial-2 .single-testi {
     background: #F8F8F8;
@@ -4297,7 +4323,6 @@ img{
     color: #fff;
     font-size: 14px;
     text-transform: uppercase;
-    margin-top: 26px;
     padding: 16px 29px;
     font-weight: 700;
     border-radius: 10px;
@@ -5158,12 +5183,13 @@ img{
 }
 .site-footer .footer-widget .footer-icon-box {
     display: flex;
+    align-items: center;
+    margin-bottom: 20px;
 }
 .site-footer .footer-widget .icon {
     display: inline-block;
     margin-right: 18px;
     position: relative;
-    top: 7px;
 }
 .site-footer .footer-widget .icon i {
     color: #fff;
@@ -5174,6 +5200,9 @@ img{
     text-align: center;
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 5px;
+}
+.site-footer .footer-widget .footer-icon-box .content .description{
+	margin-bottom: 0;
 }
 
 .site-footer .subscribe_form {
@@ -5270,6 +5299,9 @@ img{
 }
 .site-footer.style-two .recent-project img{
 	border-radius: 5px;
+}
+.site-footer.style-two .recent-project .project-item{
+	position: relative;
 }
 .site-footer.style-two .footer-widget .list li a:hover {
     color: var(--secondary-color);
@@ -6187,7 +6219,7 @@ img{
 ==================*/
 
 .subscribe .row.subscribe {
-    padding: 76px 46px 57px 62px;
+    padding: 76px 46px 60px 62px;
     background-image: url(../image/subs.png);
     background-repeat: no-repeat;
     background-position: center center;

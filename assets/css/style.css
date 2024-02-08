@@ -4588,7 +4588,9 @@ img{
 	margin-bottom: 30px;
 }
 .blog-posts .single-post.style1 .thumb {
-    position: relative;
+	position: relative;
+	border-radius: 5px;
+	overflow: hidden;
 }
 .blog-posts .single-post.style1 .thumb:before {
     position: absolute;

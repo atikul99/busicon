@@ -4,12 +4,6 @@ $(document).ready(function(o){
 	 Header
 	==================*/
 
-	$('.menu-toggle').click(function(){
-		$(this).toggleClass('show');
-		$('.header-nav').slideToggle();
-		$('.nav-menu').slideToggle();
-	});
-
 	// Sticky Menu
 
 	var headers1 = $('.site-header');
@@ -23,18 +17,30 @@ $(document).ready(function(o){
 
 	});
 
+	/*================
+	 Mobile Menu
+	==================*/
+
+	$('.toggle-button').click(function(){
+		$(this).toggleClass('active');
+		$('.menu-content').slideToggle();
+	});
+
 	if ($(window).width() < 1200){
 		$('.sub-menu-toggle').click(function(){
 			$(this).siblings('.sub-menu').slideToggle();
 		});
 	};
 
-  // Team 2
+	// Sticky
 
-  $(".team-socail-icon").hide();
-    $('.team-icon').click(function(){
-        $(this).siblings(".team-socail-icon").slideToggle("slow");
-  });
+	$(window).on('scroll', function () {
+		if ($(window).scrollTop() > 150) {
+			$('.mobile-menu').addClass('sticky');
+		} else {
+			$('.mobile-menu').removeClass('sticky');
+		}
+	});
 
 	/*================
 	 Back to Top
@@ -243,6 +249,11 @@ $(document).ready(function(o){
 	/*================
 	 Team
 	==================*/
+
+  $(".team-socail-icon").hide();
+    $('.team-icon').click(function(){
+        $(this).siblings(".team-socail-icon").slideToggle("slow");
+  });
 
 	$('.team-two-carousel').owlCarousel({
 		items: 1,

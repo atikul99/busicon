@@ -169,33 +169,16 @@
 		display: none;
 	}
 
-	/* Menu Toggle */
-	
-	.site-header .menu-wrapper .menu-toggle{
-		display: block;
-		cursor: pointer;
-	}
-	.site-header .menu-wrapper .menu-toggle i{
-		font-size: 22px;
-		color: #111111;
-	}
-	.site-header .menu-wrapper .menu-toggle .close{
-		display: none;
-	}
-	.site-header .menu-wrapper .menu-toggle.show .close{
-		display: block;
-	}
-	.site-header .menu-wrapper .menu-toggle.show .open{
-		display: none;
-	}
-	.site-header .main-menu .manu-wrapper .menu-element .menu-button {
-		display: none;
-	}
-
 	/*================
 	 Hero Section
 	==================*/
 
+	.hero-section .slider-item {
+		min-height: 700px;
+	}
+	.hero-section .row{
+		margin-top: 0;
+	}
 	.hero-section .slider-item h1.title {
 		font-size: 57px;
 		line-height: 69px;
@@ -208,6 +191,9 @@
 	}
 	.hero-section.style-two p.description {
 		width: 52%;
+	}
+	.hero-section .slider-item .hero-thumb{
+		margin-top: 0;
 	}
 	.hero-section .slider-item .hero-thumb .main-image img{
 		width: 100%;
@@ -444,9 +430,6 @@
 	 Hero Section
 	==================*/
 
-	.hero-section .slider-item{
-		min-height: 830px;
-	}
 	.hero-section .slider-item .content .column .subtitle{
 		font-size: 18px;
 	}
@@ -776,6 +759,10 @@
 	    margin-top: 0;
 	}
 
+	.contact-us.style-two .image{
+		display: none;
+	}
+
 	/*================
 	 Blog Section
 	==================*/
@@ -934,8 +921,14 @@
 	 Hero Section
 	==================*/
 
+	.hero-section .row {
+		margin-top: 0;
+	}
 	.hero-section .text-wrapper{
-		margin: 22px 0 20px;
+		margin: 0 0 20px;
+	}
+	.hero-section .slider-item{
+		min-height: 830px;
 	}
 	.hero-section .slider-item h1.title {
 	    font-size: 36px;
@@ -945,11 +938,12 @@
 	}
 	.hero-section .slider-item .button-set{
 	   margin-right: 17px;
+	   margin-bottom: 0;
 	}
 
 	.hero-section .slider-item .button-set a {
 		font-size: 13px;
-	    padding: 14px 19px;
+	    padding: 13px 19px;
 	}
 	.hero-section .slider-item .content .column {
 		width: 100%;
@@ -1501,6 +1495,18 @@
 		left: 0;
 	}
 
+	/* Style Two */
+
+	.contact-us.style-two {
+		padding: 81px 0 80px;
+	}
+	.contact-us.style-two .form-area{
+		padding: 0 0 30px;
+	}
+	.contact-us.style-two .section-title .title {
+		font-size: 26px;
+	}
+
 	/*================
 	 Blog Posts
 	==================*/
@@ -1581,7 +1587,7 @@
 	==================*/
 
 	.breadcrumb-area{
-		padding: 176px 0 112px;
+		padding: 110px 0 112px;
 	}
 	.breadcrumb-area .breadcrumb-inner .page-title {
 	    font-size: 36px;
@@ -1831,18 +1837,6 @@
 	}
 	.contact-us .info-box.two {
 	    margin-top: 0;
-	}
-
-	/* Style Two */
-
-	.contact-us.style-two .form-area{
-		padding: 0 0 30px;
-	}
-	.contact-us.style-two .section-title .title {
-		font-size: 26px;
-	}
-	.contact-us.style-two {
-		padding: 81px 0 80px;
 	}
 
 	/* Inner Page */

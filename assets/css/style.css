@@ -4769,6 +4769,8 @@ img{
 }
 .blog-posts-2 .single-post .thumb{
 	position: relative;
+	border-radius: 5px;
+	overflow: hidden;
 }
 .blog-posts-2 .single-post.style1 .thumb::before {
 	position: absolute;

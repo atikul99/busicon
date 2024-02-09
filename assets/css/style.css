@@ -2928,6 +2928,7 @@ img{
 }
 .project .project-image {
     position: relative;
+    border-radius: 5px;
     overflow: hidden;
     margin-bottom: 25px;
 }
